@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A8CAB49227B61B4008F6ADC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CAB48227B61B4008F6ADC /* AppDelegate.swift */; };
+		3A8CAB4B227B61B4008F6ADC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CAB4A227B61B4008F6ADC /* MainViewController.swift */; };
+		3A8CAB4E227B61B4008F6ADC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8CAB4C227B61B4008F6ADC /* Main.storyboard */; };
+		3A8CAB50227B61B7008F6ADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8CAB4F227B61B7008F6ADC /* Assets.xcassets */; };
+		3A8CAB53227B61B7008F6ADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8CAB51227B61B7008F6ADC /* LaunchScreen.storyboard */; };
+		3A8CAB5E227B61B8008F6ADC /* KinoiPadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CAB5D227B61B8008F6ADC /* KinoiPadTests.swift */; };
+		3A8CAB69227B61B8008F6ADC /* KinoiPadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CAB68227B61B8008F6ADC /* KinoiPadUITests.swift */; };
+		3A8CAB78227B63C6008F6ADC /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CAB77227B63C6008F6ADC /* Film.swift */; };
+		3A8CAB7A227B63D3008F6ADC /* FilmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CAB79227B63D3008F6ADC /* FilmService.swift */; };
+		3A8CAB7C227B63DE008F6ADC /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CAB7B227B63DE008F6ADC /* Settings.swift */; };
+		3A8CAB7E227DD479008F6ADC /* Rezervacija.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CAB7D227DD479008F6ADC /* Rezervacija.swift */; };
+		3A8CAB82227DE17F008F6ADC /* CellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CAB81227DE17F008F6ADC /* CellTableViewCell.swift */; };
+		3A8CAB84227DEF2C008F6ADC /* Termin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CAB83227DEF2C008F6ADC /* Termin.swift */; };
+		3A8CAB8A2289B130008F6ADC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CAB892289B130008F6ADC /* SecondViewController.swift */; };
+		3A8CAB8C2289D6B9008F6ADC /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CAB8B2289D6B9008F6ADC /* ThirdViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A8CAB5A227B61B7008F6ADC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A8CAB3D227B61B3008F6ADC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A8CAB44227B61B4008F6ADC;
+			remoteInfo = KinoiPad;
+		};
+		3A8CAB65227B61B8008F6ADC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A8CAB3D227B61B3008F6ADC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A8CAB44227B61B4008F6ADC;
+			remoteInfo = KinoiPad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A8CAB45227B61B4008F6ADC /* KinoiPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KinoiPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A8CAB48227B61B4008F6ADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A8CAB4A227B61B4008F6ADC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3A8CAB4D227B61B4008F6ADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A8CAB4F227B61B7008F6ADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A8CAB52227B61B7008F6ADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A8CAB54227B61B7008F6ADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A8CAB59227B61B7008F6ADC /* KinoiPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KinoiPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A8CAB5D227B61B8008F6ADC /* KinoiPadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinoiPadTests.swift; sourceTree = "<group>"; };
+		3A8CAB5F227B61B8008F6ADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A8CAB64227B61B8008F6ADC /* KinoiPadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KinoiPadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A8CAB68227B61B8008F6ADC /* KinoiPadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinoiPadUITests.swift; sourceTree = "<group>"; };
+		3A8CAB6A227B61B8008F6ADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A8CAB77227B63C6008F6ADC /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		3A8CAB79227B63D3008F6ADC /* FilmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmService.swift; sourceTree = "<group>"; };
+		3A8CAB7B227B63DE008F6ADC /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		3A8CAB7D227DD479008F6ADC /* Rezervacija.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rezervacija.swift; sourceTree = "<group>"; };
+		3A8CAB81227DE17F008F6ADC /* CellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableViewCell.swift; sourceTree = "<group>"; };
+		3A8CAB83227DEF2C008F6ADC /* Termin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Termin.swift; sourceTree = "<group>"; };
+		3A8CAB892289B130008F6ADC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3A8CAB8B2289D6B9008F6ADC /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A8CAB42227B61B4008F6ADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8CAB56227B61B7008F6ADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8CAB61227B61B8008F6ADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A8CAB3C227B61B3008F6ADC = {
+			isa = PBXGroup;
+			children = (
+				3A8CAB81227DE17F008F6ADC /* CellTableViewCell.swift */,
+				3A8CAB47227B61B4008F6ADC /* KinoiPad */,
+				3A8CAB5C227B61B7008F6ADC /* KinoiPadTests */,
+				3A8CAB67227B61B8008F6ADC /* KinoiPadUITests */,
+				3A8CAB46227B61B4008F6ADC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A8CAB46227B61B4008F6ADC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A8CAB45227B61B4008F6ADC /* KinoiPad.app */,
+				3A8CAB59227B61B7008F6ADC /* KinoiPadTests.xctest */,
+				3A8CAB64227B61B8008F6ADC /* KinoiPadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A8CAB47227B61B4008F6ADC /* KinoiPad */ = {
+			isa = PBXGroup;
+			children = (
+				3A8CAB48227B61B4008F6ADC /* AppDelegate.swift */,
+				3A8CAB4A227B61B4008F6ADC /* MainViewController.swift */,
+				3A8CAB4C227B61B4008F6ADC /* Main.storyboard */,
+				3A8CAB4F227B61B7008F6ADC /* Assets.xcassets */,
+				3A8CAB51227B61B7008F6ADC /* LaunchScreen.storyboard */,
+				3A8CAB54227B61B7008F6ADC /* Info.plist */,
+				3A8CAB77227B63C6008F6ADC /* Film.swift */,
+				3A8CAB892289B130008F6ADC /* SecondViewController.swift */,
+				3A8CAB79227B63D3008F6ADC /* FilmService.swift */,
+				3A8CAB7B227B63DE008F6ADC /* Settings.swift */,
+				3A8CAB7D227DD479008F6ADC /* Rezervacija.swift */,
+				3A8CAB83227DEF2C008F6ADC /* Termin.swift */,
+				3A8CAB8B2289D6B9008F6ADC /* ThirdViewController.swift */,
+			);
+			path = KinoiPad;
+			sourceTree = "<group>";
+		};
+		3A8CAB5C227B61B7008F6ADC /* KinoiPadTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A8CAB5D227B61B8008F6ADC /* KinoiPadTests.swift */,
+				3A8CAB5F227B61B8008F6ADC /* Info.plist */,
+			);
+			path = KinoiPadTests;
+			sourceTree = "<group>";
+		};
+		3A8CAB67227B61B8008F6ADC /* KinoiPadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A8CAB68227B61B8008F6ADC /* KinoiPadUITests.swift */,
+				3A8CAB6A227B61B8008F6ADC /* Info.plist */,
+			);
+			path = KinoiPadUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A8CAB44227B61B4008F6ADC /* KinoiPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A8CAB6D227B61B8008F6ADC /* Build configuration list for PBXNativeTarget "KinoiPad" */;
+			buildPhases = (
+				3A8CAB41227B61B4008F6ADC /* Sources */,
+				3A8CAB42227B61B4008F6ADC /* Frameworks */,
+				3A8CAB43227B61B4008F6ADC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KinoiPad;
+			productName = KinoiPad;
+			productReference = 3A8CAB45227B61B4008F6ADC /* KinoiPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A8CAB58227B61B7008F6ADC /* KinoiPadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A8CAB70227B61B8008F6ADC /* Build configuration list for PBXNativeTarget "KinoiPadTests" */;
+			buildPhases = (
+				3A8CAB55227B61B7008F6ADC /* Sources */,
+				3A8CAB56227B61B7008F6ADC /* Frameworks */,
+				3A8CAB57227B61B7008F6ADC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A8CAB5B227B61B7008F6ADC /* PBXTargetDependency */,
+			);
+			name = KinoiPadTests;
+			productName = KinoiPadTests;
+			productReference = 3A8CAB59227B61B7008F6ADC /* KinoiPadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A8CAB63227B61B8008F6ADC /* KinoiPadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A8CAB73227B61B8008F6ADC /* Build configuration list for PBXNativeTarget "KinoiPadUITests" */;
+			buildPhases = (
+				3A8CAB60227B61B8008F6ADC /* Sources */,
+				3A8CAB61227B61B8008F6ADC /* Frameworks */,
+				3A8CAB62227B61B8008F6ADC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A8CAB66227B61B8008F6ADC /* PBXTargetDependency */,
+			);
+			name = KinoiPadUITests;
+			productName = KinoiPadUITests;
+			productReference = 3A8CAB64227B61B8008F6ADC /* KinoiPadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A8CAB3D227B61B3008F6ADC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Nace Selisnik";
+				TargetAttributes = {
+					3A8CAB44227B61B4008F6ADC = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					3A8CAB58227B61B7008F6ADC = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 3A8CAB44227B61B4008F6ADC;
+					};
+					3A8CAB63227B61B8008F6ADC = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 3A8CAB44227B61B4008F6ADC;
+					};
+				};
+			};
+			buildConfigurationList = 3A8CAB40227B61B3008F6ADC /* Build configuration list for PBXProject "KinoiPad" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A8CAB3C227B61B3008F6ADC;
+			productRefGroup = 3A8CAB46227B61B4008F6ADC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A8CAB44227B61B4008F6ADC /* KinoiPad */,
+				3A8CAB58227B61B7008F6ADC /* KinoiPadTests */,
+				3A8CAB63227B61B8008F6ADC /* KinoiPadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A8CAB43227B61B4008F6ADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8CAB53227B61B7008F6ADC /* LaunchScreen.storyboard in Resources */,
+				3A8CAB50227B61B7008F6ADC /* Assets.xcassets in Resources */,
+				3A8CAB4E227B61B4008F6ADC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8CAB57227B61B7008F6ADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8CAB62227B61B8008F6ADC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A8CAB41227B61B4008F6ADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8CAB4B227B61B4008F6ADC /* MainViewController.swift in Sources */,
+				3A8CAB7A227B63D3008F6ADC /* FilmService.swift in Sources */,
+				3A8CAB8C2289D6B9008F6ADC /* ThirdViewController.swift in Sources */,
+				3A8CAB78227B63C6008F6ADC /* Film.swift in Sources */,
+				3A8CAB8A2289B130008F6ADC /* SecondViewController.swift in Sources */,
+				3A8CAB49227B61B4008F6ADC /* AppDelegate.swift in Sources */,
+				3A8CAB7E227DD479008F6ADC /* Rezervacija.swift in Sources */,
+				3A8CAB7C227B63DE008F6ADC /* Settings.swift in Sources */,
+				3A8CAB84227DEF2C008F6ADC /* Termin.swift in Sources */,
+				3A8CAB82227DE17F008F6ADC /* CellTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8CAB55227B61B7008F6ADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8CAB5E227B61B8008F6ADC /* KinoiPadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8CAB60227B61B8008F6ADC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8CAB69227B61B8008F6ADC /* KinoiPadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A8CAB5B227B61B7008F6ADC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A8CAB44227B61B4008F6ADC /* KinoiPad */;
+			targetProxy = 3A8CAB5A227B61B7008F6ADC /* PBXContainerItemProxy */;
+		};
+		3A8CAB66227B61B8008F6ADC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A8CAB44227B61B4008F6ADC /* KinoiPad */;
+			targetProxy = 3A8CAB65227B61B8008F6ADC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A8CAB4C227B61B4008F6ADC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A8CAB4D227B61B4008F6ADC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A8CAB51227B61B7008F6ADC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A8CAB52227B61B7008F6ADC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A8CAB6B227B61B8008F6ADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A8CAB6C227B61B8008F6ADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A8CAB6E227B61B8008F6ADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = KinoiPad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nace-Selisnik.KinoiPad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A8CAB6F227B61B8008F6ADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = KinoiPad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nace-Selisnik.KinoiPad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3A8CAB71227B61B8008F6ADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KinoiPadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nace-Selisnik.KinoiPadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KinoiPad.app/KinoiPad";
+			};
+			name = Debug;
+		};
+		3A8CAB72227B61B8008F6ADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KinoiPadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nace-Selisnik.KinoiPadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KinoiPad.app/KinoiPad";
+			};
+			name = Release;
+		};
+		3A8CAB74227B61B8008F6ADC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KinoiPadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nace-Selisnik.KinoiPadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KinoiPad;
+			};
+			name = Debug;
+		};
+		3A8CAB75227B61B8008F6ADC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KinoiPadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nace-Selisnik.KinoiPadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KinoiPad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A8CAB40227B61B3008F6ADC /* Build configuration list for PBXProject "KinoiPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8CAB6B227B61B8008F6ADC /* Debug */,
+				3A8CAB6C227B61B8008F6ADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A8CAB6D227B61B8008F6ADC /* Build configuration list for PBXNativeTarget "KinoiPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8CAB6E227B61B8008F6ADC /* Debug */,
+				3A8CAB6F227B61B8008F6ADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A8CAB70227B61B8008F6ADC /* Build configuration list for PBXNativeTarget "KinoiPadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8CAB71227B61B8008F6ADC /* Debug */,
+				3A8CAB72227B61B8008F6ADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A8CAB73227B61B8008F6ADC /* Build configuration list for PBXNativeTarget "KinoiPadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8CAB74227B61B8008F6ADC /* Debug */,
+				3A8CAB75227B61B8008F6ADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A8CAB3D227B61B3008F6ADC /* Project object */;
+}
